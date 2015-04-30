@@ -23,6 +23,7 @@ namespace PCancerManagement.Views
         public ustCntrlPatientRegistration()
         {
             InitializeComponent();
+            //initial upload
         }
     }
 }

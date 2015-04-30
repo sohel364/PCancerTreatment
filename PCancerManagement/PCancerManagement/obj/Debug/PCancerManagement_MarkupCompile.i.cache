@@ -2,19 +2,19 @@
 
 
 winexe
-VB
-.vb
-c:\users\simon\documents\visual studio 2012\Projects\PCancerManagement\PCancerManagement\obj\Debug\
+C#
+.cs
+E:\Projects\PCancerManagement\PCancerManagement\obj\Debug\
 PCancerManagement
 none
 false
+DEBUG;TRACE
+E:\Projects\PCancerManagement\PCancerManagement\App.xaml
+2-1748688853
 
-c:\users\simon\documents\visual studio 2012\Projects\PCancerManagement\PCancerManagement\Application.xaml
-11151548125
-
-7941323013
-10146666284
-MainWindow.xaml;
+10-1093445203
+121886138872
+MainWindow.xaml;Views\ustCntrlPatientRegistration.xaml;
 
 False
 

@@ -1,2 +1,1 @@
 E:\Projects\PCancerManagement\PCancerManagement\bin\Debug\PCancerManagement.exe.config
-E:\Projects\CancerProject\PCancerTreatment\PCancerManagement\PCancerManagement\bin\Debug\PCancerManagement.exe.config

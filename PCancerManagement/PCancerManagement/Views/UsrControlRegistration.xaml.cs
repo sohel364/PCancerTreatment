@@ -16,14 +16,13 @@ using System.Windows.Shapes;
 namespace PCancerManagement.Views
 {
     /// <summary>
-    /// Interaction logic for ustCntrlPatientRegistration.xaml
+    /// Interaction logic for UsrControlRegistration.xaml
     /// </summary>
-    public partial class ustCntrlPatientRegistration : UserControl
+    public partial class UsrControlRegistration : UserControl
     {
-        public ustCntrlPatientRegistration()
+        public UsrControlRegistration()
         {
             InitializeComponent();
-            //initial upload
         }
     }
 }

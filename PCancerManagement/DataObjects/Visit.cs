@@ -8,5 +8,7 @@ namespace PCancerManagement.DataObjects
 {
     class Visit
     {
+
     }
+         
 }

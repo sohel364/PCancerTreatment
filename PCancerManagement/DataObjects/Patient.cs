@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PCancerManagement.DataObjects
+namespace DataObjects
 {
-    class Patient
+    public class Patient
     {
         private string _patient_id;
         private string _fathers_name;
@@ -88,6 +88,8 @@ namespace PCancerManagement.DataObjects
             get { return _weight; }
             set { _weight = value; }
         }
-        
+
+        public Patient() { 
+        }
     }
 }

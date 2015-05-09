@@ -139,8 +139,16 @@
                                     <TextBlock Grid.Row="3" Grid.Column="0" Style="{DynamicResource NewPatient}">Histopathology</TextBlock>
                                     <TextBlock Grid.Row="4" Grid.Column="0" Style="{DynamicResource NewPatient}">Cytology</TextBlock>
 
-                                    <TextBox Grid.Row="1" Grid.Column="2" Height="20"></TextBox>
-                                    <DatePicker Grid.Row="2" Grid.Column="2" Height="25"></DatePicker>
+                                    <TextBox Grid.Row="1" Grid.Column="2" Height="20" Name="definition_icd_code"></TextBox>
+                                    <DatePicker Grid.Row="2" Grid.Column="2" Height="25" Name="definition_dx_date"></DatePicker>
+                                    <StackPanel Grid.Row="3" Grid.Column="2" Height="20" Orientation="Horizontal">
+                                        <Button Content="Stage" Width="60" Click="btn_click_definition_stage_histopathology"></Button>
+                                        <TextBlock Width="Auto" Name="definition_histopathology_stage"></TextBlock>
+                                    </StackPanel>
+                                    <StackPanel Grid.Row="4" Grid.Column="2" Height="20" Orientation="Horizontal">
+                                        <Button Content="Stage" Width="60" Click="btn_click_definition_stage_cytology"></Button>
+                                        <TextBlock Width="Auto" Name="definition_cytology_stage"></TextBlock>
+                                    </StackPanel>
 
                                 </Grid>
 

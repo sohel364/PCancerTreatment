@@ -122,5 +122,15 @@ namespace AvalonDockTest
 
             this.body_surface_area_calculator(null, null);
         }
+
+        private void btn_click_definition_stage_cytology(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_click_definition_stage_histopathology(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

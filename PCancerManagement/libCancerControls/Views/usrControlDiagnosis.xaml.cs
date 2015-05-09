@@ -12,22 +12,27 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Text.RegularExpressions;
 
-namespace AvalonDockTest
+namespace libCancerControls
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for usrControlDiagnosis.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class usrControlDiagnosis : UserControl
     {
-        public MainWindow()
+        public usrControlDiagnosis()
         {
             InitializeComponent();
         }
 
-       
+        private void btn_click_definition_stage_cytology(object sender, RoutedEventArgs e)
+        {
 
-        
+        }
+
+        private void btn_click_definition_stage_histopathology(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

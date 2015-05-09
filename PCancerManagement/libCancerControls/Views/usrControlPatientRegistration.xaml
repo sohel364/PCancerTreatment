@@ -5,16 +5,75 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-        <Label Content="Patient Name" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.447,1.615"/>
-        <Label Content="Address" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
-        <Label Content="Contact Number" HorizontalAlignment="Left" Margin="10,116,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="127,29,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="127,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="127,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="127,195,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.54,1.616"/>
-        <Label Content="Contact Number" HorizontalAlignment="Left" Margin="10,151,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="127,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+    <UserControl.Resources>
+        <Style x:Key="NewPatient" TargetType="{x:Type TextBlock}">
+            <Setter Property="FontSize" Value="14"></Setter>
+            <Setter Property="FontWeight" Value="SemiBold"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+            <Setter Property="Foreground" Value="Black"></Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".03*"/>
+            <ColumnDefinition Width=".005*"/>
+            <ColumnDefinition Width=".055*"/>
+            <ColumnDefinition Width=".01*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Style="{DynamicResource NewPatient}">Patient Name</TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="0" Style="{DynamicResource NewPatient}">Father's Name</TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="0" Style="{DynamicResource NewPatient}">Sex</TextBlock>
+        <TextBlock Grid.Row="4" Grid.Column="0" Style="{DynamicResource NewPatient}">Age</TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="0" Style="{DynamicResource NewPatient}">Height</TextBlock>
+        <TextBlock Grid.Row="6" Grid.Column="0" Style="{DynamicResource NewPatient}">Weight</TextBlock>
+        <TextBlock Grid.Row="7" Grid.Column="0" Style="{DynamicResource NewPatient}">Body Suface Area</TextBlock>
+        <TextBlock Grid.Row="8" Grid.Column="0" Style="{DynamicResource NewPatient}">Contact No</TextBlock>
+        <TextBlock Grid.Row="9" Grid.Column="0" Style="{DynamicResource NewPatient}">Address</TextBlock>
+
+        <TextBox Grid.Row="1" Grid.Column="2" Height="20" Name="new_patient_patient_name"></TextBox>
+        <TextBox Grid.Row="2" Grid.Column="2" Height="20" Name="new_patient_father_name"></TextBox>
+        <ComboBox Grid.Row="3" Grid.Column="2" Height="20" Name="new_patient_sex" IsEditable="True">
+            <ComboBoxItem Content="Male"></ComboBoxItem>
+            <ComboBoxItem Content="Female"></ComboBoxItem>
+            <ComboBoxItem Content="Transgender"></ComboBoxItem>
+        </ComboBox>
+        <TextBox Grid.Row="4" Grid.Column="2" Height="20" Name="new_patient_age"  PreviewTextInput="NumberValidationTextBox"></TextBox>
+        <StackPanel Grid.Row="5" Grid.Column="2" Height="20" Orientation="Horizontal">
+            <TextBox Width="40" Name="new_patient_height_feet" PreviewTextInput="NumberValidationTextBox" TextChanged="foot_to_centimeter_converter"></TextBox>
+            <TextBlock Text=" feet "></TextBlock>
+            <TextBox Width="40" Name="new_patient_height_inch" PreviewTextInput="NumberValidationTextBox" TextChanged="foot_to_centimeter_converter"></TextBox>
+            <TextBlock Text=" inch / "></TextBlock>
+            <TextBox Name="new_patient_height_cm" Width="60" PreviewTextInput="NumberValidationTextBox" TextChanged="centimeter_to_foot_converter"></TextBox>
+            <TextBlock Text=" cm"></TextBlock>
+        </StackPanel>
+
+        <StackPanel Grid.Row="6" Grid.Column="2" Height="20" Orientation="Horizontal">
+            <TextBox Width="60" Name="new_patient_weight" PreviewTextInput="NumberValidationTextBox" TextChanged="body_surface_area_calculator"></TextBox>
+            <TextBlock Text=" Kg"></TextBlock>
+        </StackPanel>
+        <TextBlock Grid.Row="7" Grid.Column="2" Height="20" Name="new_patient_bsa"></TextBlock>
+        <TextBox Grid.Row="8" Grid.Column="2" Height="20" Name="new_patient_contact_no" PreviewTextInput="NumberValidationTextBox"></TextBox>
+        <TextBox Grid.Row="9" Grid.Column="2" Height="60" Name="new_patient_address"></TextBox>
+        <StackPanel Grid.Row="10" Grid.Column="2" Height="20" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <Button Content="Clear All" Width="50" Click="btn_click_new_patient_clear_all"></Button>
+            <TextBlock Width="10"></TextBlock>
+            <Button Content="Save" Width="50" Click="btn_click_new_patient_save"></Button>
+        </StackPanel>
 
     </Grid>
 </UserControl>

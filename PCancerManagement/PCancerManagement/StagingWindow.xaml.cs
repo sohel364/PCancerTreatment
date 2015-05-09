@@ -10,24 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Text.RegularExpressions;
 
-namespace AvalonDockTest
+namespace PCancerManagement
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for StagingWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class StagingWindow : Window
     {
-        public MainWindow()
+        public StagingWindow()
         {
             InitializeComponent();
+            this.Owner = App.Current.MainWindow;
         }
-
-       
-
-        
     }
 }

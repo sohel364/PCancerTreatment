@@ -1,11 +1,6 @@
 USE [cancer]
-
 GO
-/****** Object:  StoredProcedure [dbo].[INSERT_SIZE]    
-**Create by : Mahmudul Hasan
-**Purpose : Inserts patient and retuns the inserted ID
-**Script Date: 5/9/2015 9:05:49 PM 
-******/
+/****** Object:  StoredProcedure [dbo].[insert_patient]    Script Date: 5/9/2015 10:29:26 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -15,7 +10,7 @@ GO
 -- Create date:
 -- Description:	
 -- =============================================
-CREATE PROCEDURE [dbo].[insert_patient] 
+ALTER PROCEDURE [dbo].[insert_patient] 
 (
 		@patient_id NVARCHAR(250) OUTPUT,
 		@name NVARCHAR(250),
@@ -27,7 +22,7 @@ CREATE PROCEDURE [dbo].[insert_patient]
 		@weight NVARCHAR(250),
 		@address NVARCHAR(250),
 		@contact_no NVARCHAR(250),
-		@reffered_id BIGINT,
+		@reffered_id NVARCHAR(250),
 		@dtype NVARCHAR(250),
 		@disese_id NVARCHAR(250)
 

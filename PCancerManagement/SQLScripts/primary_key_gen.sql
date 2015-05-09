@@ -1,6 +1,6 @@
 USE [cancer]
 GO
-/****** Object:  StoredProcedure [dbo].[primary_key_gen]    Script Date: 5/9/2015 9:49:48 PM ******/
+/****** Object:  StoredProcedure [dbo].[primary_key_gen]    Script Date: 5/9/2015 10:29:46 PM ******/
 SET ANSI_NULLS OFF
 GO
 SET QUOTED_IDENTIFIER OFF

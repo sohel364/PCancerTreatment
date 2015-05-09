@@ -1,4 +1,5 @@
 USE [cancer]
+
 GO
 /****** Object:  StoredProcedure [dbo].[INSERT_SIZE]    
 **Create by : Mahmudul Hasan

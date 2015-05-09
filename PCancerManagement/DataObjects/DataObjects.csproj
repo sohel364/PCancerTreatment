@@ -39,7 +39,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BodySurfaceArea.cs" />
+    <Compile Include="ChemoProtocolName.cs" />
+    <Compile Include="ChemoTherapy.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="Cytology.cs" />
     <Compile Include="Patient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Visit.cs" />

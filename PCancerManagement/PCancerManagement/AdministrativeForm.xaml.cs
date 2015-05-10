@@ -15,14 +15,22 @@ using System.Windows.Shapes;
 namespace PCancerManagement
 {
     /// <summary>
-    /// Interaction logic for StagingWindow.xaml
+    /// Interaction logic for AdministrativeForm.xaml
     /// </summary>
-    public partial class StagingWindow : Window
+    public partial class AdministrativeForm : Window
     {
-        public StagingWindow()
+        public AdministrativeForm()
         {
             InitializeComponent();
-            this.Owner = App.Current.MainWindow;
+        }
+
+
+        internal void LoadUserControl(UIElement element)
+        {
+            UserControl usrControl = (UserControl)element;   
+            this.myStack.Children.Clear();
+            this.myStack.Children.Add(usrControl);
+            this.Title = usrControl.Name;
         }
     }
 }

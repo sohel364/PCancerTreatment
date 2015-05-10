@@ -25,7 +25,24 @@ namespace AvalonDockTest
         public MainWindow()
         {
             InitializeComponent();
-            BusinessLogics.SetDataBaseConnectionString.SetDataBaseConnection();
+            BusinessLogics.SetDataBaseConnectionString.SetDataBaseConnection();    
+        }
+
+
+        private void MenuItemStagingClickEvent(object sender, RoutedEventArgs e)
+        {
+            PCancerManagement.AdministrativeForm adminForm = new PCancerManagement.AdministrativeForm();
+            libCancerControls.Views.UserControlStaging usrCntrl = new libCancerControls.Views.UserControlStaging();
+            adminForm.LoadUserControl(usrCntrl);
+            adminForm.Show();
+        }
+
+        private void MenuItemRefferalClickEvent(object sender, RoutedEventArgs e)
+        {
+            PCancerManagement.AdministrativeForm adminForm = new PCancerManagement.AdministrativeForm();
+            libCancerControls.Views.UserControlRefferal usrCntrl = new libCancerControls.Views.UserControlRefferal();
+            adminForm.LoadUserControl(usrCntrl);
+            adminForm.Show();
         }  
         
     }

@@ -30,6 +30,10 @@
                 <MenuItem Header="Load"/>
                 <MenuItem Header="Save"/>
             </MenuItem>
+            <MenuItem Header="Administration">
+                <MenuItem Header="Staging" Click="MenuItemStagingClickEvent"/>
+                <MenuItem Header="Refferal" Click="MenuItemRefferalClickEvent"/>
+            </MenuItem>
         </Menu>
 
         <avalonDock:DockingManager x:Name="dockingManager" Grid.Row="1">

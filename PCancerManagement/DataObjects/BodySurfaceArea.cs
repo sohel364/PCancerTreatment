@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataObjects
 {
-    class BodySurfaceArea
+    public class BodySurfaceArea
     {
         private string _body_surface_area_id;
         private string _body_surface_area;

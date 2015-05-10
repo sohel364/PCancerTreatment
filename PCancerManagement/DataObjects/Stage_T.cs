@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataObjects
 {
-    class Stage_T
+    public class Stage_T
     {
         private string stage_t_id;
         private string stage_t_name;

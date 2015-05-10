@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataObjects
 {
-    class ChemoProtocolName
+    public class ChemoProtocolName
     {
         private string _chemo_name;
         private string _protocol_name;

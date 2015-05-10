@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataObjects.DataObjects
 {
-    class Visit
+    public class Visit
     {
         private string _visit_id;
         private string _visit_date;

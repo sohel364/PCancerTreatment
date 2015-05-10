@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataObjects
 {
-    class Cytology
+    public class Cytology
     {
         private string _cytology_id;
         private string _cytology_description;

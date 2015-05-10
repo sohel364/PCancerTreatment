@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Text.RegularExpressions;
+using DataObjects;
+using BusinessLogics;
 
 namespace libCancerControls
 {
@@ -37,9 +39,28 @@ namespace libCancerControls
 
         }
 
+        public Patient GetPatientData() {
+
+            Patient patient = new Patient();
+            patient.Name = new_patient_patient_name.Text;
+            patient.Fathers_name = new_patient_father_name.Text;
+            patient.Sex = new_patient_sex.SelectedValue.ToString();
+            patient.Age = new_patient_age.Text;
+            patient.Religion = "NA";
+            patient.Height = new_patient_height_cm.Text;
+            patient.Weight = new_patient_weight.Text;
+            patient.Address = new_patient_address.Text;
+            patient.Contact_no = new_patient_contact_no.Text;
+            patient.Reffered_id = new_patient_contact_no.Text;
+            patient.Dtype = "NA"; // it will replace by disease details
+            patient.Disese_id = "NA"; // it will replace by disease details
+
+            return patient;
+        }
+
         private void btn_click_new_patient_save(object sender, RoutedEventArgs e)
         {
-
+          BLLPatient.Insert(this.GetPatientData());
         }
 
         private void body_surface_area_calculator(object sender, TextChangedEventArgs e)

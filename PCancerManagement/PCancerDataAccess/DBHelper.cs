@@ -24,8 +24,8 @@ namespace PCancerDataAccess
         /// </summary>
         public static void SetConnectionString()
         {
-            //ConnectionString = @"Data Source=ROHAN\SCSQL2008;Initial Catalog=RTL;User ID=sa;Password=socialcube";
-            ConnectionString = @"Data Source=LOAD\SQLEXPRESS;Initial Catalog=cancer;Integrated Security=True";
+           
+            ConnectionString = @"Data Source=SLEEKBOOK\SQLEXPRESS;Initial Catalog=cancer;Integrated Security=True";
 
             //if (string.IsNullOrEmpty(ConnectionString))
             //{

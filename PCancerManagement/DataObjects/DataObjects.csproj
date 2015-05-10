@@ -46,6 +46,11 @@
     <Compile Include="Cytology.cs" />
     <Compile Include="Patient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stage.cs" />
+    <Compile Include="Stage_M.cs" />
+    <Compile Include="Stage_N.cs" />
+    <Compile Include="Stage_Rules.cs" />
+    <Compile Include="Stage_T.cs" />
     <Compile Include="Visit.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -115,6 +115,14 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\BusinessLogics\BusinessLogics.csproj">
+      <Project>{7c04f9a7-cb54-4882-bacd-edeab42c1c3b}</Project>
+      <Name>BusinessLogics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataObjects\DataObjects.csproj">
+      <Project>{dad636e7-a8e0-439e-8161-b3e61c929b34}</Project>
+      <Name>DataObjects</Name>
+    </ProjectReference>
     <ProjectReference Include="..\libCancerControls\libCancerControls.csproj">
       <Project>{83d30ccc-adfa-44c5-b56e-0f73bbc6a330}</Project>
       <Name>libCancerControls</Name>

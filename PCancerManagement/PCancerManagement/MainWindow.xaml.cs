@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Text.RegularExpressions;
+using BusinessLogics;
 
 namespace AvalonDockTest
 {
@@ -24,10 +25,8 @@ namespace AvalonDockTest
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-       
-
+            BusinessLogics.SetDataBaseConnectionString.SetDataBaseConnection();
+        }  
         
     }
 }

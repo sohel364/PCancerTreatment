@@ -19,7 +19,7 @@ namespace BusinessLogics
         /// <param name="NewColor">Patient</param>
         public static void Insert(Patient NewPatient)
         {
-            SqlParameter[] param = new SqlParameter[12];
+            SqlParameter[] param = new SqlParameter[13];
 
             param[0] = new SqlParameter("@patient_id", SqlDbType.NVarChar, 15);
             param[0].Direction = ParameterDirection.Output;
@@ -30,11 +30,11 @@ namespace BusinessLogics
             param[5] = new SqlParameter("@age", NewPatient.Age);
             param[6] = new SqlParameter("@height", NewPatient.Height);
             param[7] = new SqlParameter("@weight", NewPatient.Weight);
-            param[7] = new SqlParameter("@address", NewPatient.Address);
-            param[7] = new SqlParameter("@contact_no", NewPatient.Contact_no);
-            param[7] = new SqlParameter("@reffered_id", NewPatient.Reffered_id);
-            param[7] = new SqlParameter("@dtype", NewPatient.Dtype);
-            param[7] = new SqlParameter("@disese_id", NewPatient.Disese_id);
+            param[8] = new SqlParameter("@address", NewPatient.Address);
+            param[9] = new SqlParameter("@contact_no", NewPatient.Contact_no);
+            param[10] = new SqlParameter("@reffered_id", NewPatient.Reffered_id);
+            param[11] = new SqlParameter("@dtype", NewPatient.Dtype);
+            param[12] = new SqlParameter("@disese_id", NewPatient.Disese_id);
 
             try
             {

@@ -1,0 +1,98 @@
+﻿<Window x:Class="PCancerManagement.StageSelector"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="StageSelector" Height="500" Width="900"
+        WindowStartupLocation="CenterScreen" WindowState="Normal" WindowStyle="ToolWindow" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".015*"></RowDefinition>
+            <RowDefinition Height=".075*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition ></ColumnDefinition>
+                <ColumnDefinition ></ColumnDefinition>
+                <ColumnDefinition ></ColumnDefinition>
+                <ColumnDefinition ></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <GroupBox Grid.Column="0" Header="ICD Code" HorizontalAlignment="Stretch" Margin="10,10,10,10" VerticalAlignment="Stretch" Height="Auto" Width="Auto" BorderThickness="1">
+                <TextBox HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="130"/>
+            </GroupBox>    
+            <GroupBox Grid.Column="1" Header="Basis" HorizontalAlignment="Stretch" Margin="10,10,10,10" VerticalAlignment="Stretch" Height="Auto" Width="Auto" BorderThickness="1">
+                <ComboBox HorizontalAlignment="Center" Height="23" VerticalAlignment="Center" Width="130"/>
+            </GroupBox>
+            <GroupBox Grid.Column="2" Header="Stage" HorizontalAlignment="Stretch" Margin="10,10,10,10" VerticalAlignment="Stretch" Height="Auto" Width="Auto" BorderThickness="1">
+                <TextBox HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="130"/>
+            </GroupBox>
+            <GroupBox Grid.Column="3" Header="Criteria" HorizontalAlignment="Stretch" Margin="10,10,10,10" VerticalAlignment="Stretch" Height="Auto" Width="Auto" BorderThickness="1">
+                <TextBox HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="130"/>
+            </GroupBox>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <GroupBox Grid.Row="1" Header="Stage Seletection" HorizontalAlignment="Stretch" Margin="10,10,10,10" VerticalAlignment="Stretch" Height="Auto" Width="Auto" BorderThickness="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height=".015*"></RowDefinition>
+                        <RowDefinition Height=".07*"></RowDefinition>
+                        <RowDefinition Height=".015*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    
+                    <StackPanel Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+                        <TextBlock>Stage T</TextBlock>
+                        <TextBlock Name="txt_block_stage_t" Margin="20,0,0,0" Width="130" Background="Beige"></TextBlock>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+                        <TextBlock>Stage M</TextBlock>
+                        <TextBlock Name="txt_block_stage_m" Margin="20,0,0,0" Width="130" Background="Beige"></TextBlock>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+                        <TextBlock>Stage N</TextBlock>
+                        <TextBlock Name="txt_block_stage_n" Margin="20,0,0,0" Width="130" Background="Beige"></TextBlock>
+                    </StackPanel>
+
+                    <ListView Name="list_view_stage_t" HorizontalAlignment="Center" Height="226" Margin="10" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Width="267">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Width="100"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+
+                    <ListView Name="list_view_stage_m" HorizontalAlignment="Center" Height="226" Margin="10" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Width="267">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Width="100"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+
+                    <ListView Name="list_view_stage_n" HorizontalAlignment="Center" Height="226" Margin="10" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" Width="267">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Width="100"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+
+                    <StackPanel Grid.Row="2" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" Orientation="Horizontal">
+                        <Button Content="Stage" Width="70"></Button>
+                        <Button Content="Ok" Margin="20,0,0,0" Width="70"></Button>
+                        <Button Content="Cancel" Margin="20,0,0,0" Width="70"></Button>
+                    </StackPanel>
+
+
+                </Grid>
+            </GroupBox>
+        </Grid>
+
+
+    </Grid>
+</Window>

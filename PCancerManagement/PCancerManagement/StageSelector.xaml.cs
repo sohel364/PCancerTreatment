@@ -10,29 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace libCancerControls
+namespace PCancerManagement
 {
     /// <summary>
-    /// Interaction logic for usrControlDiagnosis.xaml
+    /// Interaction logic for StageSelector.xaml
     /// </summary>
-    public partial class usrControlDiagnosis : UserControl
+    public partial class StageSelector : Window
     {
-        public usrControlDiagnosis()
+        public StageSelector()
         {
             InitializeComponent();
-        }
-
-        private void btn_click_stage_cytology(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btn_click_stage_histopathology(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

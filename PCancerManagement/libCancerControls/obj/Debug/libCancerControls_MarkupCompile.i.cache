@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 
-2130125687
+4548278654
 
-8-1940571522
-142139114525
-Views\usrControlDiagnosis.xaml;Views\usrControlPatientRegistration.xaml;
+10-288373170
+16258095190
+Views\UserControlRefferal.xaml;Views\UserControlStaging.xaml;Views\usrControlDiagnosis.xaml;Views\usrControlPatientRegistration.xaml;
 
 False
 

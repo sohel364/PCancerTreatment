@@ -54,7 +54,7 @@
 
                         <avalonDock:LayoutAnchorablePane>
                             <avalonDock:LayoutAnchorable Title="Diagnosis">
-                                <libgui:usrControlDiagnosis></libgui:usrControlDiagnosis>
+                                <libgui:usrControlDiagnosis Name="user_control_diagnosis"></libgui:usrControlDiagnosis>
                             </avalonDock:LayoutAnchorable>
                         </avalonDock:LayoutAnchorablePane>
                     </avalonDock:LayoutAnchorablePaneGroup>

@@ -26,3 +26,7 @@ C:\Users\User\Documents\GitHub\PCancerTreatment\PCancerManagement\PCancerManagem
 C:\Users\User\Documents\GitHub\PCancerTreatment\PCancerManagement\PCancerManagement\obj\Debug\PCancerManagement.csproj.GenerateResource.Cache
 C:\Users\User\Documents\GitHub\PCancerTreatment\PCancerManagement\PCancerManagement\obj\Debug\PCancerManagement.exe
 C:\Users\User\Documents\GitHub\PCancerTreatment\PCancerManagement\PCancerManagement\obj\Debug\PCancerManagement.pdb
+C:\Users\User\Documents\GitHub\PCancerTreatment\PCancerManagement\PCancerManagement\obj\Debug\AdministrativeForm.baml
+C:\Users\User\Documents\GitHub\PCancerTreatment\PCancerManagement\PCancerManagement\obj\Debug\AdministrativeForm.g.cs
+C:\Users\User\Documents\GitHub\PCancerTreatment\PCancerManagement\PCancerManagement\obj\Debug\StageSelector.baml
+C:\Users\User\Documents\GitHub\PCancerTreatment\PCancerManagement\PCancerManagement\obj\Debug\StageSelector.g.cs

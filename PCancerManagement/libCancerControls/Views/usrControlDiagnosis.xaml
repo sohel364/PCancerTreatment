@@ -37,11 +37,11 @@
         <TextBox Grid.Row="1" Grid.Column="2" Height="20" Name="definition_icd_code"></TextBox>
         <DatePicker Grid.Row="2" Grid.Column="2" Height="25" Name="definition_dx_date"></DatePicker>
         <StackPanel Grid.Row="3" Grid.Column="2" Height="20" Orientation="Horizontal">
-            <Button Content="Stage" Width="60"/>
+            <Button Content="Stage" Width="60" Name="btn_stage_histopathology"/>
             <TextBlock Width="Auto" Name="diagnosis_histopathology_stage"></TextBlock>
         </StackPanel>
         <StackPanel Grid.Row="4" Grid.Column="2" Height="20" Orientation="Horizontal">
-            <Button Content="Stage" Width="60"></Button>
+            <Button Content="Stage" Width="60" Name="btn_stage_cytology"></Button>
             <TextBlock Width="Auto" Name="diagnosis_cytology_stage"></TextBlock>
         </StackPanel>
 

@@ -25,7 +25,25 @@ namespace AvalonDockTest
         public MainWindow()
         {
             InitializeComponent();
-            BusinessLogics.SetDataBaseConnectionString.SetDataBaseConnection();    
+            BusinessLogics.SetDataBaseConnectionString.SetDataBaseConnection();
+            libCancerControls.usrControlDiagnosis usr_control_diagnosis = (libCancerControls.usrControlDiagnosis)this.FindName("user_control_diagnosis");
+            Button btn_stage_histopathology = (Button)usr_control_diagnosis.FindName("btn_stage_histopathology");
+            Button btn_stage_cytology = (Button)usr_control_diagnosis.FindName("btn_stage_cytology");
+
+            btn_stage_histopathology.Click += new RoutedEventHandler(btn_click_histology);
+            btn_stage_cytology.Click += new RoutedEventHandler(btn_click_cytology);
+        }
+
+        private void btn_click_cytology(object sender, RoutedEventArgs e)
+        {
+            PCancerManagement.StageSelector stageSelector = new PCancerManagement.StageSelector();
+            stageSelector.ShowDialog();
+        }
+
+        private void btn_click_histology(object sender, RoutedEventArgs e)
+        {
+            PCancerManagement.StageSelector stageSelector = new PCancerManagement.StageSelector();
+            stageSelector.ShowDialog();
         }
 
 
@@ -43,7 +61,7 @@ namespace AvalonDockTest
             libCancerControls.Views.UserControlRefferal usrCntrl = new libCancerControls.Views.UserControlRefferal();
             adminForm.LoadUserControl(usrCntrl);
             adminForm.Show();
-        }  
-        
+        }
+
     }
 }

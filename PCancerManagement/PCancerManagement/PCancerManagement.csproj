@@ -75,6 +75,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="StageInfo.cs" />
     <Compile Include="StageSelector.xaml.cs">
       <DependentUpon>StageSelector.xaml</DependentUpon>
     </Compile>

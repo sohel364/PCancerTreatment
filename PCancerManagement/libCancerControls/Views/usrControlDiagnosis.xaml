@@ -4,12 +4,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="300" d:DesignWidth="450">
     <UserControl.Resources>
         <Style x:Key="NewPatient" TargetType="{x:Type TextBlock}">
             <Setter Property="FontSize" Value="14"></Setter>
             <Setter Property="FontWeight" Value="SemiBold"></Setter>
             <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
             <Setter Property="Foreground" Value="Black"></Setter>
         </Style>
     </UserControl.Resources>
@@ -18,8 +19,8 @@
             <RowDefinition Height="10"/>
             <RowDefinition Height="25"/>
             <RowDefinition Height="25"/>
-            <RowDefinition Height="25"/>
-            <RowDefinition Height="25"/>
+            <RowDefinition Height="55"/>
+            <RowDefinition Height="55"/>
             <RowDefinition Height="25"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -36,14 +37,26 @@
 
         <TextBox Grid.Row="1" Grid.Column="2" Height="20" Name="definition_icd_code"></TextBox>
         <DatePicker Grid.Row="2" Grid.Column="2" Height="25" Name="definition_dx_date"></DatePicker>
-        <StackPanel Grid.Row="3" Grid.Column="2" Height="20" Orientation="Horizontal">
-            <Button Content="Stage" Width="60" Name="btn_stage_histopathology"/>
-            <TextBlock Width="Auto" Name="diagnosis_histopathology_stage"></TextBlock>
+        <StackPanel Grid.Row="3" Grid.Column="2" Height="20" Orientation="Horizontal" VerticalAlignment="Top" Margin="0,5,0,0">           
+            <TextBlock Width="40" Name="txt_histopathology_stage_t" Background="BlanchedAlmond"></TextBlock>
+            <Button Content=" X " Name="btn_histopathology_t_x" Width="Auto" Margin="5,0,0,0"></Button>
+            <TextBlock Width="40" Name="txt_histopathology_stage_m" Background="BlanchedAlmond" Margin="20,0,0,0"></TextBlock>
+            <Button Content=" X " Name="btn_histopathology_m_x" Width="Auto" Margin="5,0,0,0"></Button>
+            <TextBlock Width="40" Name="txt_histopathology_stage_n" Background="BlanchedAlmond" Margin="20,0,0,0"></TextBlock>
+            <Button Content=" X " Name="btn_histopathology_n_x" Width="Auto" Margin="5,0,0,0"></Button>
         </StackPanel>
-        <StackPanel Grid.Row="4" Grid.Column="2" Height="20" Orientation="Horizontal">
-            <Button Content="Stage" Width="60" Name="btn_stage_cytology"></Button>
-            <TextBlock Width="Auto" Name="diagnosis_cytology_stage"></TextBlock>
+        <Button Grid.Row="3" Grid.Column="2" Content="Stage" Height="20" Width="60" Name="btn_stage_histopathology" VerticalAlignment="Bottom" Margin="0,0,0,5"/>
+        
+        <StackPanel Grid.Row="4" Grid.Column="2" Height="20" Orientation="Horizontal" VerticalAlignment="Top" Margin="0,5,0,0">
+            <TextBlock Width="40" Name="txt_cytology_stage_t" Background="BlanchedAlmond"></TextBlock>
+            <Button Content=" X " Name="btn_cytology_t_x" Width="Auto" Margin="5,0,0,0"></Button>
+            <TextBlock Width="40" Name="txt_cytology_stage_m" Background="BlanchedAlmond" Margin="20,0,0,0"></TextBlock>
+            <Button Content=" X " Name="btn_cytology_m_x" Width="Auto" Margin="5,0,0,0"></Button>
+            <TextBlock Width="40" Name="txt_cytology_stage_n" Background="BlanchedAlmond" Margin="20,0,0,0"></TextBlock>
+            <Button Content=" X " Name="btn_cytology_n_x" Width="Auto" Margin="5,0,0,0"></Button>
         </StackPanel>
+
+        <Button Grid.Row="4" Grid.Column="2" Content="Stage" Height="20" Width="60" Name="btn_stage_cytology" VerticalAlignment="Bottom" Margin="0,0,0,5"></Button>
 
     </Grid>
 </UserControl>

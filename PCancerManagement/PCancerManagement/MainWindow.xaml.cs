@@ -52,7 +52,7 @@ namespace AvalonDockTest
             PCancerManagement.AdministrativeForm adminForm = new PCancerManagement.AdministrativeForm();
             libCancerControls.Views.UserControlStaging usrCntrl = new libCancerControls.Views.UserControlStaging();
             adminForm.LoadUserControl(usrCntrl);
-            adminForm.Show();
+            adminForm.ShowDialog();
         }
 
         private void MenuItemRefferalClickEvent(object sender, RoutedEventArgs e)
@@ -60,7 +60,7 @@ namespace AvalonDockTest
             PCancerManagement.AdministrativeForm adminForm = new PCancerManagement.AdministrativeForm();
             libCancerControls.Views.UserControlRefferal usrCntrl = new libCancerControls.Views.UserControlRefferal();
             adminForm.LoadUserControl(usrCntrl);
-            adminForm.Show();
+            adminForm.ShowDialog();
         }
 
     }

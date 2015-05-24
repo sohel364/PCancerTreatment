@@ -5,9 +5,46 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              Name="Staging"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="450" d:DesignWidth="450">
     <Grid>
-        <Button Content="Staging" HorizontalAlignment="Left" Margin="89,117,0,0" VerticalAlignment="Top" Width="75"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".40*"></RowDefinition>
+            <RowDefinition Height=".60*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <GroupBox Grid.Row="0" Header="Add Stage Info" HorizontalAlignment="Center" Margin="10,10,10,0" VerticalAlignment="Top" Height="160" Width="430">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".30*"></RowDefinition>
+                    <RowDefinition Height=".70*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".10*"></ColumnDefinition>
+                    <ColumnDefinition Width=".20*"></ColumnDefinition>
+                    <ColumnDefinition Width=".60*"></ColumnDefinition>
+                    <ColumnDefinition Width=".10*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                
+                <TextBlock Text="Stage Type" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,0,0"></TextBlock>
+                <TextBlock Text="Description" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,0,5"></TextBlock>
+                <ComboBox  Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center" Width="120" Margin="10,0,0,0">
+                    <ComboBoxItem>Stage T</ComboBoxItem>
+                    <ComboBoxItem>Stage M</ComboBoxItem>
+                    <ComboBoxItem>Stage N</ComboBoxItem>
+                </ComboBox>
+                <TextBox Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="60" Width="240" Margin="10,0,0,0"></TextBox>
+                <Button Content="Save" Grid.Row="1" Grid.Column="2" Width="50" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,10"></Button>
+
+
+            </Grid>
+        </GroupBox>
+
+        <DataGrid Grid.Row="1" Name="_dataGrid" AutoGenerateColumns="False" Margin="10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Stage T" Binding="{Binding [0]}"/>
+                <DataGridTextColumn Header="Stage M" Binding="{Binding [1]}"/>
+                <DataGridTextColumn Header="Stage N" Binding="{Binding [2]}"/>
+            </DataGrid.Columns>
+        </DataGrid>
 
     </Grid>
 </UserControl>

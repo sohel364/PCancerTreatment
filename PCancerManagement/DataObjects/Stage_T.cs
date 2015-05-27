@@ -11,7 +11,7 @@ namespace DataObjects
         private string stage_t_id;
         private string stage_t_name;
         private string stage_t_desc;
-        private string stage_disease_id;
+        private string stage_t_disease_id;
 
         public string Stage_t_id
         {
@@ -34,10 +34,10 @@ namespace DataObjects
         }
 
 
-        public string Stage_disease_id
+        public string Stage_t_disease_id
         {
-            get { return stage_disease_id; }
-            set { stage_disease_id = value; }
+            get { return stage_t_disease_id; }
+            set { stage_t_disease_id = value; }
         }
 
     }

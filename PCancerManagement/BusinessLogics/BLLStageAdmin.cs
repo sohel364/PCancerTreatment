@@ -59,7 +59,7 @@ namespace BusinessLogics
 
         public static void Insert(Stage_T stage_t)
         {
-            SqlParameter[] param = new SqlParameter[4];
+            SqlParameter[] param = new SqlParameter[5];
 
             param[0] = new SqlParameter("@stage_t_id", SqlDbType.NVarChar, 15);
             param[0].Direction = ParameterDirection.Output;

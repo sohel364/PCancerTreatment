@@ -10,11 +10,11 @@
         <GroupBox Header="Add Refferal" HorizontalAlignment="Left" Margin="0,5,0,0" VerticalAlignment="Top" Height="142" Width="400">
             <Label Content="Name" HorizontalAlignment="Left" Height="29" VerticalAlignment="Top" Width="63" Margin="0,6,0,0"/>
         </GroupBox>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="76,31,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="293"/>
+        <TextBox HorizontalAlignment="Left" Name="txtName" Height="23" Margin="76,31,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="293"/>
         <Label Content="Details
 " HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.344,-4.53"/>
-        <TextBox HorizontalAlignment="Left" Height="40" Margin="76,67,0,0" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top" Width="293"/>
-        <Button Content="Save" HorizontalAlignment="Left" Margin="294,117,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox HorizontalAlignment="Left" Name="txtDetails" Height="40" Margin="76,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="293"/>
+        <Button Content="Save" Click="btn_click_Refferal_save" HorizontalAlignment="Left" Margin="78,118,0,0" VerticalAlignment="Top" Width="75"/>
 
         <DataGrid Name="_dataGrid" Grid.Row="0" AutoGenerateColumns="False" Margin="0,166,0,0">
             <DataGrid.Columns>

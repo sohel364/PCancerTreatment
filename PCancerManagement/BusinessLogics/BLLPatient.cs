@@ -14,7 +14,7 @@ namespace BusinessLogics
     public class BLLPatient
     {
         /// <summary>
-        /// Method to insert Colors
+        /// Method to insert Patient
         /// </summary>
         /// <param name="NewColor">Patient</param>
         public static void Insert(Patient NewPatient)

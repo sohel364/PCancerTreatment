@@ -31,6 +31,7 @@ namespace libCancerControls.Views
         {
             Stage_M stage_m = new Stage_M();
 
+            stage_m.Stage_Type = cmb_stage_basis.Text;
             stage_m.Stage_m_name = txt_box_stage_name.Text;
             stage_m.Stage_m_desc = txt_box_stage_desc.Text;
             stage_m.Stage_m_disease_id = "N/A";
@@ -42,6 +43,7 @@ namespace libCancerControls.Views
         {
             Stage_N stage_n = new Stage_N();
 
+            stage_n.Stage_Type = cmb_stage_basis.Text;
             stage_n.Stage_n_name = txt_box_stage_name.Text;
             stage_n.Stage_n_desc = txt_box_stage_desc.Text;
             stage_n.Stage_n_disease_id = "N/A";
@@ -53,6 +55,7 @@ namespace libCancerControls.Views
         {
             Stage_T stage_t = new Stage_T();
 
+            stage_t.Stage_Type = cmb_stage_basis.Text;
             stage_t.Stage_t_name = txt_box_stage_name.Text;
             stage_t.Stage_t_desc = txt_box_stage_desc.Text;
             stage_t.Stage_t_disease_id = "N/A";

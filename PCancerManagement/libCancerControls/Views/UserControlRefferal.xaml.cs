@@ -13,6 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using DataObjects;
+using BusinessLogics;
+
 namespace libCancerControls.Views
 {
     /// <summary>
@@ -24,5 +27,21 @@ namespace libCancerControls.Views
         {
             InitializeComponent();
         }
+
+
+        public Refferal getRefferalData() {
+            Refferal refferal = new Refferal();
+            refferal.Reffered_by = txtName.Text.ToString().Trim();
+            refferal.Details = txtDetails.Text.ToString().Trim();
+
+            return refferal;
+        }
+
+        private void btn_click_Refferal_save(object sender, RoutedEventArgs e)
+        {
+            BLLRefferal.Insert(getRefferalData());
+            MessageBox.Show("Inserted Successfully");
+        }
+
     }
 }

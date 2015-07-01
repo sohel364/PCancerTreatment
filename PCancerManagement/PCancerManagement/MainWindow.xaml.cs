@@ -29,9 +29,21 @@ namespace AvalonDockTest
             libCancerControls.usrControlDiagnosis usr_control_diagnosis = (libCancerControls.usrControlDiagnosis)this.FindName("user_control_diagnosis");
             Button btn_stage_histopathology = (Button)usr_control_diagnosis.FindName("btn_stage_histopathology");
             Button btn_stage_cytology = (Button)usr_control_diagnosis.FindName("btn_stage_cytology");
+            Button btn_select_disease_ICD = (Button)user_control_diagnosis.FindName("btn_select_icd");
 
             btn_stage_histopathology.Click += new RoutedEventHandler(btn_click_histology);
             btn_stage_cytology.Click += new RoutedEventHandler(btn_click_cytology);
+            btn_select_disease_ICD.Click += btn_select_disease_ICD_Click;
+
+            
+        }
+
+        void btn_select_disease_ICD_Click(object sender, RoutedEventArgs e)
+        {
+            PCancerManagement.AdministrativeForm adminForm = new PCancerManagement.AdministrativeForm();
+            libCancerControls.Views.UserControlDiseaseSelector userCntrl = new libCancerControls.Views.UserControlDiseaseSelector();
+            adminForm.LoadUserControl(userCntrl);
+            adminForm.ShowDialog();
         }
 
         private void btn_click_cytology(object sender, RoutedEventArgs e)

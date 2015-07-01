@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLLDisease.cs" />
     <Compile Include="BLLPatient.cs" />
     <Compile Include="BLLRefferal.cs" />
     <Compile Include="BLLStageAdmin.cs" />

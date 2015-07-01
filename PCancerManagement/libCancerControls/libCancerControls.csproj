@@ -47,6 +47,9 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\UserControlDiseaseSelector.xaml.cs">
+      <DependentUpon>UserControlDiseaseSelector.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserControlRefferal.xaml.cs">
       <DependentUpon>UserControlRefferal.xaml</DependentUpon>
     </Compile>
@@ -61,6 +64,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Views\UserControlDiseaseSelector.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\UserControlRefferal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

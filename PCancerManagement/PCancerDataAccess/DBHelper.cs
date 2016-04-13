@@ -11,7 +11,6 @@ namespace PCancerDataAccess
     public class DBHelper
     {
 
-
         /// <summary>
         /// Static Declaration of ConnectionString for the database connectivity
         /// Initilize empty string
